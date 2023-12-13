@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/note"
+        android:title="@string/note"
+        android:icon="@drawable/ic_note"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/item"
+        android:title="@string/item"
+        android:icon="@drawable/ic_item"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/new_note"
+        android:title="@string/new_note"
+        android:icon="@drawable/ic_new_item"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

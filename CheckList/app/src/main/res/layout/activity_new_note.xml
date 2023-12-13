@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewNoteActivity"
+    tools:menu="@menu/style_note_menu">
+
+    <LinearLayout
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#959595"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/baseline_menu_24" />
+
+            <TableLayout
+                android:id="@+id/tlColorPicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TableRow
+                    android:id="@+id/upColorPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/ibRed"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@null"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        app:srcCompat="@color/red" />
+
+                    <ImageButton
+                        android:id="@+id/ibGreen"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@null"
+                        android:paddingTop="3dp"
+                        app:srcCompat="@color/green" />
+
+                    <ImageButton
+                        android:id="@+id/ibBlue"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@null"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="3dp"
+                        app:srcCompat="@color/blue" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/downColorPicker"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/ibYellow"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@null"
+                        android:paddingLeft="3dp"
+                        android:paddingBottom="3dp"
+                        app:srcCompat="@color/yellow" />
+
+                    <ImageButton
+                        android:id="@+id/ibBlack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@null"
+                        android:paddingBottom="3dp"
+                        app:srcCompat="@color/black" />
+
+                    <ImageButton
+                        android:id="@+id/ibOrange"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@null"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="3dp"
+                        app:srcCompat="@color/orange" />
+                </TableRow>
+
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edDescription"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/description"
+                android:inputType="textMultiLine|textPersonName"
+                android:maxLines="100"
+                app:layout_constraintBottom_toTopOf="@+id/bSave"
+                app:layout_constraintEnd_toEndOf="@+id/edTitle"
+                app:layout_constraintStart_toStartOf="@+id/edTitle"
+                app:layout_constraintTop_toBottomOf="@+id/edTitle" />
+
+            <Button
+                android:id="@+id/bSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/edDescription"
+                app:layout_constraintStart_toStartOf="@+id/edDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
