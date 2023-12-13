@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exercises">
+        <item>Растяжка шеи|60|neck.gif</item>
+        <item>Повороты головой|30|head turns.gif</item>
+        <item>Скрутка лёжа|x10|back.gif</item>
+        <item>Колени к груди|x10|knee to chest.gif</item>
+        <item>Поза кошки|60|cat.gif</item>
+        <item>Колени|x10|knee.gif</item>
+    </string-array>
+    <string-array name="days">
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+        <item>0,1,2,3,4</item>
+    </string-array>
+</resources>

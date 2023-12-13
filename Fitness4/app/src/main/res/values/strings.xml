@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Fitness</string>
+    <string name="day">День:</string>
+    <string name="exercises_amount">Количество упражнений:</string>
+    <string name="start">Начать</string>
+    <string name="exercises_beginning_in">Начало упражнений через:</string>
+    <string name="throw_exercise">Пропустить упражнение</string>
+    <string name="the_next_exercise">Следующее упражнение</string>
+    <string name="ready">Готово</string>
+    <string name="current_exercise">Текущее упражнение</string>
+    <string name="training_days">Дни тренировок</string>
+    <string name="exercises_list">Список упражнений</string>
+    <string name="be_ready">Приготовьтесь</string>
+    <string name="days_left">Осталось дней:</string>
+    <string name="reset">Сбросить</string>
+    <string name="attention">Внимание!</string>
+    <string name="reset_all_days">Вы действительно хотите сбросить весь свой прогресс?</string>
+    <string name="cancel">Отмена</string>
+    <string name="reset_clicked_day">Вы действительно хотите повторить этот день и сбросить прогресс?</string>
+    <string name="yes">Да!</string>
+    <string name="about_app">О приложении</string>
+</resources>
